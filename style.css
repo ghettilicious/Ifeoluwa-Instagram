@@ -1,36 +1,38 @@
-body{
+body {
     background: gray;
     margin: 0;
+    font-family: Arial, sans-serif; /* Optional: Improve font */
 }
-header{
+header {
     background: white;
     padding: 10px;
+    text-align: center; /* Center the header text */
 }
-header h1{
+header h1 {
     margin: 0;
 }
-div.post{
-    background: white;
-}
-div.post img{
-    width: 100px;
-}
-div.post .post-header div:first-child{
-    display: inline-block;
-    width: 80%;
-    background: green;
-}
-div.post .post-header div:last-child{
-    display: inline-block;
-    width: 20;
-    padding: 10px;
-    text-align: right;
-}
-div.post h2, div.post p{
-    padding: 5px;
-    margin: 0;
-}
-div.container{
+div.container {
     width: 600px;
     margin: auto;
+}
+div.post {
+    background: white;
+    margin-bottom: 20px; /* Adds space between posts */
+}
+div.post img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+div.post .post-header {
+    display: flex; /* Use flexbox for header layout */
+    justify-content: space-between; /* Space between title and date */
+    padding: 10px; /* Add padding around post header */
+}
+div.post .post-header div:last-child {
+    width: 20%; /* Adjusted width with unit */
+    text-align: right; /* Align date to the right */
+}
+div.post h2, div.post p {
+    padding: 5px;
+    margin: 0;
 }
